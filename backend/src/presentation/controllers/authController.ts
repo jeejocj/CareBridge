@@ -44,7 +44,7 @@ export class AuthController {
     async RegisterUser(req: Request, res: Response) {
         try {
             const { userData, otp } = req.body;
-
+            
             const otpVerified = await this._verifyOtpUseCase.verifyOtp({email: userData.email, otp});
 
             if (!otpVerified) {

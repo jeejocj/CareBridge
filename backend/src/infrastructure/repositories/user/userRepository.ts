@@ -17,6 +17,8 @@ export class UserRepository implements IUserRepository {
     const doc = await this._model.findOne({ email });
     return doc ? AuthMapper.fromMongooseDocument(doc) : null;
   }
+
+
 }
 
 

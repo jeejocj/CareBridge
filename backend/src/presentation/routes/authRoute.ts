@@ -29,6 +29,7 @@ export class Auth_router {
         this._router.post("/forget", (req:Request, res:Response)=>{
             injectedAuthController.ForgetPasswordSendOtp(req, res);
         });
+
     }
 
     public get_router() {

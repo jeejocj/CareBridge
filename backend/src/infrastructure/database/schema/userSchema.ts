@@ -11,7 +11,7 @@ export const userSchema = new Schema(
     fullName: { type: String, required: true },
     email: { type: String, unique: true, lowercase: true, required: true },
     password: { type: String, required: true },
-    phone: { type: String, required: true },
+    phone: { type: String},
     profileImage: { type: String },
 
     role: {
